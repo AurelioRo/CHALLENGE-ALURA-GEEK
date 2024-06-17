@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Creeper",
+      "precio": "70",
+      "imagen": "https://i.ebayimg.com/images/g/QqgAAOSwEB1lTHLQ/s-l1200.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Stormtrooper",
+      "precio": "40",
+      "imagen": "./items/starwars.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Game Boy Classic",
+      "precio": "60",
+      "imagen": "./items/gameboy.png"
+    },
+    {
+      "nombre": "This Is Elon Musk!",
+      "precio": "69",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOMTV_Ic3sFzgeGEK20sB0z_T8YkuQwJnzZA&s",
+      "id": 4
+    }
+  ]
+}

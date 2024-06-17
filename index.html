@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Alura Geek</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+
+    <body>
+        <header class="titulo">
+            <img class="img-titulo-letras" src="../items/AluraGeek transparente.png">
+            <img class="img-titulo-corazones" src="../items/corazones.png">
+        </header>
+
+        <main class="productos-formulario">
+            <div class="div-productos">
+                <h1>MIS PRODUCTOS:</h1>
+                <ul class="lista-productos" data-lista-productos></ul>
+            </div>
+            <div class="div-formulario">
+                <h1 class="h1-form">AGREGAR </br> PRODUCTO:</h1>
+                <form class="formulario">
+                    
+                    <input
+                    data-campo-nombre
+                    class="form-input input-nombre"
+                    type="text"
+                    required
+                    minlength="5"
+                    placeholder="NOMBRE..."
+                    >
+
+                    <input
+                    data-campo-precio
+                    class="form-input input-precio" 
+                    type="number"
+                    required
+                    minlength="3"
+                    placeholder="PRECIO..."
+                    >
+
+                    <input
+                    data-campo-img
+                    class="form-input input-imagen  " 
+                    type="url"
+                    required
+                    minlength="5"
+                    placeholder="IMAGEN..."
+                    >
+
+                    <div class="div-botones">
+                        <button class="form-botones boton-enviar" type="submit">ENVIAR</button>
+                        <button class="form-botones boton-limpiar" type="button">LIMPIAR</button>
+                    </div>
+                    
+
+                </form>
+        
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="div-footer">
+                <img class="img-titulo-corazones" src="../items/corazones.png">
+                <img class="img-titulo-letras" src="../items/AluraGeek transparente.png">
+            </div>
+            <p>DESARROLLADO POR JULIAN R.</p>
+            <p>ALURA LATAM 2024</p>
+
+        </footer>
+
+        <script src="./js/steve.js" type="module"></script>
+
+    </body>
+</html>
