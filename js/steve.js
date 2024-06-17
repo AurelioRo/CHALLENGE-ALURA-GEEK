@@ -24,6 +24,7 @@ exportar.listaProductos.addEventListener("click", (event) => {
     
     if(event.target.nodeName === "IMG" && event.target.dataset.id) {
         eliminar(event.target.dataset.id)
+        exportar.listaProductos.innerHTML=""
         getServer().then(resultado => {
             resultado.forEach(item => exportar.productos(item.id, item.nombre, item.precio, item.imagen))
         });
