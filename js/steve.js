@@ -1,5 +1,5 @@
 
-import {exportar} from "./praductos.js"
+import {exportar} from "./productos.js"
 import {enviarDatos} from "./formulario.js"
 
 //productos
