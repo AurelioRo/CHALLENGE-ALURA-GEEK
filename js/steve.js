@@ -41,6 +41,7 @@ botonLimpiar.addEventListener("click", () => enviarDatos.limpiarDatos());
 
 botonEnviar.addEventListener("submit", (event) => 
     {agregarProduct(enviarDatos.tomarDatos(event))
+        exportar.listaProductos.innerHTML=""
         getServer().then(resultado => {
             resultado.forEach(item => exportar.productos(item.id, item.nombre, item.precio, item.imagen))
         });
@@ -49,7 +50,7 @@ botonEnviar.addEventListener("submit", (event) =>
 
 async function agregarProduct(producto) {
     const conexion = await fetch("http://localhost:3000/productos",{
-        method:"POST", 
+        method:"POST",
         headers:{"content-type":"application/json"}, 
         body:JSON.stringify(producto)
     });
